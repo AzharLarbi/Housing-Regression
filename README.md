@@ -8,9 +8,9 @@ The project explores how various features of a property impact its price, using 
 
 # Objectives
 
-Visualize and understand the relationships between different features and housing prices.
+* Visualize and understand the relationships between different features and housing prices.
 
-Build a regression model that uses all available features to improve predictions.
+* Build a regression model that uses all available features to improve predictions.
 Explore further improvements through advanced modeling and tuning techniques.
 
 # Dataset
@@ -18,43 +18,43 @@ Explore further improvements through advanced modeling and tuning techniques.
 The dataset used is House Price Prediction Dataset.csv, which can be downloaded from kaggle: https://www.kaggle.com/datasets/zafarali27/house-price-prediction-dataset/data
 It containing 2,000 entries with the following attributes:
 
-Area: Total area of the house.
+* Area: Total area of the house.
 
-Bedrooms: Number of bedrooms.
+* Bedrooms: Number of bedrooms.
 
-Bathrooms: Number of bathrooms.
+* Bathrooms: Number of bathrooms.
 
-Floors: Number of floors in the house.
+* Floors: Number of floors in the house.
 
-YearBuilt: The year the house was constructed.
+* YearBuilt: The year the house was constructed.
 
-Location: General location category of the property.
+* Location: General location category of the property.
 
-Condition: Property condition (e.g., new, good).
+* Condition: Property condition (e.g., new, good).
 
-Garage: Garage availability.
+* Garage: Garage availability.
 
-Price: Target variable representing the house price.
+* Price: Target variable representing the house price.
 
 # Exploratory Data Analysis
 
 The notebook includes detailed data visualizations for key features:
 
-Distributions of features like Area, Bedrooms, Bathrooms, and YearBuilt.
+* Distributions of features like Area, Bedrooms, Bathrooms, and YearBuilt.
 
-Target Variable Distribution: Price distributions are analyzed across categorical features such as Garage, Location, and Condition.
+* Target Variable Distribution: Price distributions are analyzed across categorical features such as Garage, Location, and Condition.
 
-Correlation Heatmap: A heatmap is used to examine correlations among numerical features, identifying features that have a stronger association with Price.
+* Correlation Heatmap: A heatmap is used to examine correlations among numerical features, identifying features that have a stronger association with Price.
 
 # Modeling
 
 The project utilizes the following steps for modeling:
 
-Feature Selection and Encoding: All features are included, with categorical features encoded for use in the model.
+* Feature Selection and Encoding: All features are included, with categorical features encoded for use in the model.
 
-Model Training: A linear regression model from scikit-learn is trained using both numerical and encoded categorical features.
+* Model Training: A linear regression model from scikit-learn is trained using both numerical and encoded categorical features.
 
-Evaluation: Performance is measured with RMSE (Root Mean Squared Error) using a custom function:
+* Evaluation: Performance is measured with RMSE (Root Mean Squared Error) using a custom function:
 ```
 def rmse(targets, predictions):
     return np.sqrt(np.mean(np.square(targets - predictions)))
@@ -63,9 +63,9 @@ def rmse(targets, predictions):
 
 To use this project:
 
-Data Preprocessing and EDA: Run the cells in the notebook to load, clean, encode, and explore the data.
+* Data Preprocessing and EDA: Run the cells in the notebook to load, clean, encode, and explore the data.
 
-Model Training and Evaluation: Train the model using all features and evaluate its performance.
+* Model Training and Evaluation: Train the model using all features and evaluate its performance.
 
 # Results
 
@@ -75,9 +75,9 @@ After training with all available features, the model’s RMSE was around (inser
 
 Contributions are welcome! Potential areas for improvement include:
 
-Hyperparameter tuning to enhance model performance.
+* Hyperparameter tuning to enhance model performance.
 
-Trying alternative models, such as decision trees or ensemble methods.
+* Trying alternative models, such as decision trees or ensemble methods.
 
-Performing feature selection or dimensionality reduction to analyze feature impact.
+* Performing feature selection or dimensionality reduction to analyze feature impact.
     
