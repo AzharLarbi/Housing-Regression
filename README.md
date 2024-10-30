@@ -69,7 +69,7 @@ To use this project:
 
 # Results
 
-After training with all available features, the model’s RMSE was around (insert RMSE from results), with limited improvement observed from categorical encoding.
+After training with all available features, the model’s loss was around 276843, with limited improvement observed from categorical encoding. This is a significant loss that could be mitigated by adding extra features, which makes this data set limiting since there are more factors that go into house pricing. 
 
 # Contributing
 
